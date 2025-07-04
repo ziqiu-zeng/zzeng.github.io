@@ -1,0 +1,62 @@
+**Fluid-Fabric Coupling with Surface-Tension Contact**
+
+Target
+=========================
+The main focus of our work is to establish a coupling model between fluid and Cloth while incorporating fluid surface tension into our model.
+
+We aim to enhance the cloth simulation technique, built upon the foundation of libWetCloth, by transitioning to a finite element method (FEM). This modification will enable us to achieve a more accurate depiction of fluid infiltration within the fabric environment. The key advantage of FEM lies in its ability to offer enhanced control over cloth vertices, including the manipulation of fluid particles, as well as a more comprehensive representation of their diffusion within the fabric mesh.
+
+In the context of fluid simulation, we aim to adopt the APIC (Affine Particle-in-Cell) method, as mentioned by libWetCloth, as our primary approach. Furthermore, we will incorporate the FLIP method as an alternative technique to facilitate a comparative analysis. This is particularly relevant for simulating scenarios involving highly fragmented water droplets.
+
+Main Reference
+=========================
++ [*A Multi-scale Model for Simulating Liquid-fabric Interactions*](http://www.cs.columbia.edu/cg/wetcloth/)
+  <br>Fei, Yun (Raymond) and Batty, Christopher and Grinspun, Eitan and Zheng, Changxi
+  <br>ACM Trans. Graph, Aug 2018
+
++ [*Solid-Fluid Interaction with Surface-Tension-Dominant Contact*](https://arxiv.org/abs/2105.08471)
+  <br>Liangwang Ruan, Jinyuan Liu, Bo Zhu, Shinjiro Sueda, Bin Wang, Baoquan Chen
+  <br>ACM Trans. Graph, Aug 2021
+
++ [*Solver-in-the-Loop: Learning from Differentiable Physics to Interact with Iterative PDE-Solvers*](https://arxiv.org/abs/2007.00016)
+  <br>Kiwon Um, Robert Brand, Yun (Raymond)Fei, Philipp Holl, Nils Thuerey
+  <br>NeurIPS 2020
+
++ [*Fine-grained differentiable physics: a yarn-level model for fabrics*](http://drhewang.com/pages/diffcloth.html)
+  <br>Deshan Gong, Zhanxing Zhu, Andrew J. Bulpitt and He Wang
+  <br>the International Conference on Learning Representations(ICLR), 2022
+
++ [*Differentiable solver for time-dependent deformation problems with contact*](https://arxiv.org/abs/2205.13643)
+  <br>Zizhou Huang, Davi Colli Tozoni, Arvi Gjoka, Zachary Ferguson, Teseo Schneider, Daniele Panozzo, Denis Zorin
+
+
+Main challenges
+=========================
+
++ Force Transmission
++ Underwater Drag Force
++ Particle Infiltration
++ Variation in Fabric material due to Immersion
++ Surface Tension
+
+Code Reference
+=========================
++ [*Fluid-Fabric Couping*](https://github.com/nepluno/libWetCloth)
++ [*FEM Cloth*](https://github.com/theodorekim/HOBAKv1)
++ [*APIC Fluid*](https://github.com/doyubkim/fluid-engine-dev)
++ [*Solver-in-Loop*](https://github.com/tum-pbs/Solver-in-the-Loop)
+
+Expected Target
+=========================
++ *SIGGRAPH 2024*(befroe 2024.1)
+  <br>Forward simulation pipeline
+
++ *Robotics Conference*
+  <br>Differentiable and controllable
+
+Author Background
+=========================
++ [*My Personal Page*](https://siyuanluo.com)
+
+<style>em.asterisk { font-style: normal; font-weight: bold; }</style>
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js"></script>
